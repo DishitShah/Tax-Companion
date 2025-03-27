@@ -1,0 +1,11 @@
+# Frontend Environment Configuration
+REACT_APP_API_BASE_URL=http://localhost:5000/api
+REACT_APP_AUTH_TOKEN_KEY=tax_companion_auth_token
+REACT_APP_ENVIRONMENT=development
+
+# Optional Feature Flags
+REACT_APP_ENABLE_OCR=true
+REACT_APP_ENABLE_COMMUNITY_FEATURES=true
+
+# External Service Keys (placeholders)
+REACT_APP_RAZORPAY_KEY=your_razorpay_key_here
