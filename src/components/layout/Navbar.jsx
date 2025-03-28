@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 text-white px-4 py-2">
+    <nav className="bg-transparent backdrop-blur-lg text-gray-800 px-4 py-2 sticky top-0 shadow-md">
       <div className="flex justify-between items-center">
         <Link to="/" className="text-lg font-bold">Tax Companion</Link>
         <div>
@@ -24,7 +24,7 @@ const Navbar = () => {
           ) : (
             <>
               <Link to="/auth/login" className="mr-4">Login</Link>
-              <Link to="/auth/register" className="bg-blue-500 px-3 py-1 rounded">Register</Link>
+              <Link to="/register" className="bg-yellow-500 px-3 py-1 rounded">Register</Link>
             </>
           )}
         </div>

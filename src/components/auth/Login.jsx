@@ -98,23 +98,21 @@ const Login = () => {
               )}
             </div>
           </div>
-
           {errors.submit && (
             <div className="text-center text-red-500 text-sm">
               {errors.submit}
             </div>
           )}
-
           <div>
-            <button
-              type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
-              Sign In
-            </button>
+          <button
+  type="submit"
+  className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+>
+  Sign In
+</button>
           </div>
-
           <div className="text-center">
+            
             <a 
               href="/forgot-password" 
               className="font-medium text-indigo-600 hover:text-indigo-500"
@@ -122,7 +120,6 @@ const Login = () => {
               Forgot your password?
             </a>
           </div>
-
           <div className="text-center">
             <span className="text-gray-600">
               Don't have an account?{' '}

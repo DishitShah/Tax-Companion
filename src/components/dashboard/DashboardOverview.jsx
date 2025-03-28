@@ -68,8 +68,8 @@ const DashboardOverview = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold mb-6">
+    <div className="p-4 bg-white rounded-lg shadow">
+    <h1 className="text-2xl font-bold text-blue-900">
         Welcome, {user?.name || 'User'}
       </h1>
 

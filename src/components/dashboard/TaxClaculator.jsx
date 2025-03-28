@@ -34,8 +34,8 @@ const TaxCalculator = () => {
   };
 
   return (
-    <div className="p-6 bg-white shadow-md rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">Tax Calculator</h2>
+    <div className="p-4 bg-white rounded-lg shadow">
+      <h2 className="text-2xl font-bold text-blue-900">Tax Calculator</h2>
       
       <div className="grid grid-cols-2 gap-4">
         <Input 

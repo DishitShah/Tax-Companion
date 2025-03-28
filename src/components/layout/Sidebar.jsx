@@ -1,41 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className="w-64 bg-gray-800 h-screen px-4 py-8">
-      <nav className="mt-10">
-        <Link 
-          to="/dashboard" 
-          className="block px-4 py-2 mt-2 text-sm font-semibold text-gray-100 bg-gray-700 rounded hover:bg-gray-600"
-        >
-          Dashboard
-        </Link>
-        <Link 
-          to="/documents" 
-          className="block px-4 py-2 mt-2 text-sm font-semibold text-gray-100 rounded hover:bg-gray-600"
-        >
-          Documents
-        </Link>
-        <Link 
-          to="/learning" 
-          className="block px-4 py-2 mt-2 text-sm font-semibold text-gray-100 rounded hover:bg-gray-600"
-        >
-          Learning
-        </Link>
-        <Link 
-          to="/filing" 
-          className="block px-4 py-2 mt-2 text-sm font-semibold text-gray-100 rounded hover:bg-gray-600"
-        >
-          Tax Filing
-        </Link>
-        <Link 
-          to="/profile" 
-          className="block px-4 py-2 mt-2 text-sm font-semibold text-gray-100 rounded hover:bg-gray-600"
-        >
-          Profile
-        </Link>
-      </nav>
+    <div className="w-64 bg-blue-900 text-white flex flex-col h-screen">
+      <div className="flex flex-col p-4">
+        <NavLink to="/dashboard" activeClassName="bg-yellow-500" className="p-2 my-2 rounded">Dashboard</NavLink>
+        <NavLink to="/documents" activeClassName="bg-yellow-500" className="p-2 my-2 rounded">Documents</NavLink>
+        <NavLink to="/learning" activeClassName="bg-yellow-500" className="p-2 my-2 rounded">Learning</NavLink>
+        <NavLink to="/filing" activeClassName="bg-yellow-500" className="p-2 my-2 rounded">Filing</NavLink>
+      </div>
     </div>
   );
 };

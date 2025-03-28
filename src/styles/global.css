@@ -1,4 +1,28 @@
 /* Global styles */
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #F5F7FA; /* Soft Gray background */
+  color: #3A4452; /* Charcoal text color */
+}
+
+a {
+  color: #1A3B5C; /* Deep Navy Blue link color */
+}
+
+a:hover {
+  color: #F5A623; /* Warm Golden Yellow on hover */
+}
+
+.button {
+  background-color: #F5A623; /* Warm Golden Yellow button background */
+  color: #FFFFFF; /* White button text */
+}
+
+.button:hover {
+  background-color: #E59514; /* Darker Golden Yellow on hover */
+}
+
+.header {
+  background-color: #1A3B5C; /* Deep Navy Blue header background */
+  color: #FFFFFF; /* White header text */
 }
