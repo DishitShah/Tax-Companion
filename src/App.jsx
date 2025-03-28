@@ -1,14 +1,10 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import AuthPage from './pages/AuthPage';
-import LoginPage from './components/auth/Login'; // Add this line
-import RegisterPage from './components/auth/Register'; // Add this line
 import DashboardPage from './pages/DashboardPage';
 import DocumentsPage from './pages/DocumentsPage';
 import LearningPage from './pages/LearningPage';
 import FilingPage from './pages/FilingPage';
-import AuthWrapper from './components/auth/AuthWrapper';
 import Navbar from './components/layout/Navbar';
 import Sidebar from './components/layout/Sidebar';
 import Footer from './components/layout/Footer';
@@ -30,13 +26,10 @@ function App() {
               <Routes>
                 <Route path="/" element={<Navigate to="/home" />} />
                 <Route path="/home" element={<HomePage />} />
-                <Route path="/auth/*" element={<AuthPage />} />
-                <Route path="/login" element={<LoginPage />} /> {/* Add this line */}
-                <Route path="/register" element={<RegisterPage />} /> {/* Add this line */}
-                <Route path="/dashboard" element={<AuthWrapper><DashboardPage /></AuthWrapper>} />
-                <Route path="/documents" element={<AuthWrapper><DocumentsPage /></AuthWrapper>} />
-                <Route path="/learning" element={<AuthWrapper><LearningPage /></AuthWrapper>} />
-                <Route path="/filing" element={<AuthWrapper><FilingPage /></AuthWrapper>} />
+                <Route path="/dashboard" element={<DashboardPage />} />
+                <Route path="/documents" element={<DocumentsPage />} />
+                <Route path="/learning" element={<LearningPage />} />
+                <Route path="/filing" element={<FilingPage />} />
               </Routes>
             </div>
           </main>
