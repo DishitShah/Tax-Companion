@@ -60,9 +60,9 @@ function App() {
                 <Route path="/register" element={<Register />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/" element={<Navigate to="/home" />} />
-                <Route path="/home" element={<AuthWrapper><HomePage /></AuthWrapper>} />
-                <Route path="/dashboard" element={<AuthWrapper><DashboardPage /></AuthWrapper>} />
-                <Route path="/documents" element={<AuthWrapper><DocumentsPage /></AuthWrapper>} />
+                <Route path="/home" element={<HomePage />} />
+                <Route path="/dashboard" element={<DashboardPage />} />
+                <Route path="/documents" element={<DocumentsPage />} />
                 <Route path="/learning" element={<AuthWrapper><LearningPage /></AuthWrapper>} />
                 <Route path="/filing" element={<AuthWrapper><FilingPage /></AuthWrapper>} />
               </Routes>

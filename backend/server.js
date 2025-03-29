@@ -5,6 +5,11 @@ const connectDB = require('./config/db');
 // Load environment variables
 dotenv.config();
 
+console.log(`PORT: ${process.env.PORT}`);
+console.log(`MONGO_URI: ${process.env.MONGO_URI}`);
+console.log(`JWT_SECRET: ${process.env.JWT_SECRET}`);
+console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
+
 // Connect to the database
 connectDB();
 
