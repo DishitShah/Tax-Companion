@@ -12,9 +12,11 @@ const ForgotPassword = () => {
   const validateForm = () => {
     const newErrors = {};
 
-    if (!email) newErrors.email = 'Email is required';
-    else if (!/\S+@\S+\.\S+/.test(email)) 
+    if (!email) {
+      newErrors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
       newErrors.email = 'Email is invalid';
+    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;

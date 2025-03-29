@@ -22,6 +22,8 @@ const taxCalculationSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+}, {
+  timestamps: true
 });
 
 const TaxCalculation = mongoose.model('TaxCalculation', taxCalculationSchema);
